@@ -1,0 +1,1 @@
+The goal of this project is to understand the concept of Web infrastructure design and to design a scalable, secure, and efficient web infrastructure to support the growth and demands of web application
