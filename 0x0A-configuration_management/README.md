@@ -1,0 +1,1 @@
+This directory explores the use of Puppet for configuration management. Configuration management is a process of handling changes to a system in a way that maintains the system's integrity and ensures that it functions as intended. Puppet is a powerful open-source automation tool that enables system administrators to define and manage infrastructure as code.
