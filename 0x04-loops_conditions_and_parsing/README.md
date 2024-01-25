@@ -1,0 +1,1 @@
+This project focuses on utilizing loops, conditions, and parsing in Bash scripting. The objective is to create a script that can perform specific actions based on certain conditions, iterate through data using loops, and parse input to extract relevant information.
