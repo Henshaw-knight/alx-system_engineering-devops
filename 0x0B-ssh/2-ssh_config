@@ -1,0 +1,6 @@
+# Configuration file for ubuntu ssh server connection
+# For more details, see ssh_config(5) man page
+
+Host 54.144.43.187
+    IdentityFile ~/.ssh/school
+    PasswordAuthentication no
