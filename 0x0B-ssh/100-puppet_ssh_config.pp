@@ -1,7 +1,7 @@
 # Set up SSH configuration using Puppet
 file_line { 'find and use private key':
   path   => '/etc/ssh/ssh_config',
-  line   => 'IdentifyFile ~/.ssh/holberton',
+  line   => 'IdentifyFile ~/.ssh/school',
   ensure => 'present'
 }
 
