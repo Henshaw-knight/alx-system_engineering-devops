@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Script that installs nginx web server
+# When querying Nginx at its root with GET request using curl, a page
+# that contains Hello World! string is returned
+
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo service nginx start
+echo "Hello World!" | sudo tee /var/www/html/index.html
