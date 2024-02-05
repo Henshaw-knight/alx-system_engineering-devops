@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Script that configures Nginx server so that
+# /redirect_me is redirecting to another page
+
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo service nginx start
+echo "Hello World!" | sudo tee /var/www/html/index.html
+sed -i "/server_name _;/a rewrite ^/redirect_me https://github.com/Henshaw-knight permanent;" /etc/nginx/sites-available/default
+sudo service nginx restart
