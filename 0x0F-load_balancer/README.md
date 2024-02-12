@@ -1,0 +1,1 @@
+This project deals with setting up and configuring a load balancer to distribute incoming traffic across multiple servers efficiently. Load balancers play a crucial role in ensuring high availability, scalability, and reliability of web applications by distributing incoming requests among backend servers.
