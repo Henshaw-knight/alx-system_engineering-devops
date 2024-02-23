@@ -1,0 +1,1 @@
+This task deals with the process of setting up MYSQL database on servers. MySQL is a popular open-source relational database management system, known for its reliability, scalability, and ease of use.
