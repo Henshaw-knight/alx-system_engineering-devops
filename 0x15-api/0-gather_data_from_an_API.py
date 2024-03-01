@@ -9,7 +9,7 @@ if __name__ == "__main__":
     base_url = "https://jsonplaceholder.typicode.com"
     employee_id = argv[1]
 
-    response = requests.get("{}//users/{}".format(
+    response = requests.get("{}/users/{}".format(
         base_url, employee_id))
     employee_name = response.json().get("name")
 
