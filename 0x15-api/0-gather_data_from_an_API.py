@@ -6,8 +6,8 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    base_url = "https://jsonplaceholder.typicode.com"
     employee_id = argv[1]
+    base_url = "https://jsonplaceholder.typicode.com"
 
     response = requests.get("{}/users/{}".format(
         base_url, employee_id))
