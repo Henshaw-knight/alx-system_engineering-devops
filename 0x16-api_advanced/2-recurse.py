@@ -24,14 +24,16 @@ def recurse(subreddit, hot_list=[], after=""):
     response = requests.get(url, headers=headers,
                             params=params, allow_redirects=False)
 
-    reddit_data = response.json()
-
-    try:
-        after = reddit_data.get("data").get("after")
-        subreddit_children = reddit_data.get("data").get("children")
-        for child in subreddit_children:
-            hot_list.append(child.get("title"))
-        return recurse(subreddit, hot_list, after)
-
-    except Exception:
+    if response.status_code != 200:
         return None
+
+    reddit_data = response.json()
+    if 'data' not in reddit_data:
+        return None
+
+    after = reddit_data.get("data").get("after")
+    subreddit_children = reddit_data.get("data").get("children")
+    for child in subreddit_children:
+        hot_list.append(child.get("title"))
+
+    return recurse(subreddit, hot_list, after)
