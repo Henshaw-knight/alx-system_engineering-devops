@@ -10,8 +10,12 @@ def top_ten(subreddit):
     headers = {
             'User-Agent': 'Mozilla/5.0'
     }
+    params = {
+            'limit': 10
+    }
 
-    response = requests.get(url, headers=headers, allow_redirects=False)
+    response = requests.get(url, headers=headers,
+                            params=params, allow_redirects=False)
 
     if response.status_code != 200:
         print(None)
@@ -23,5 +27,5 @@ def top_ten(subreddit):
         print(None)
     else:
         subreddit_children = reddit_data.get("data").get("children")
-        for i in range(10):
-            print(subreddit_children[i].get("data").get("title"))
+        for child in subreddit_children:
+            print(child.get("data").get("title"))
