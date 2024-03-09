@@ -1,0 +1,1 @@
+This tasks is concerned with setting up monitoring solution for checking the health and performance web applications including servers, databases and any additional services or infrastructure crucial to the web app's smooth operation
