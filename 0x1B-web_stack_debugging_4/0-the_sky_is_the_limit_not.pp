@@ -8,5 +8,5 @@ exec { 'update_ulimit':
 exec { 'restart_nginx':
   command  => 'service nginx restart',
   provider => shell,
-  require  => Exec['updateulimit'],
+  require  => Exec['update_ulimit'],
 }
